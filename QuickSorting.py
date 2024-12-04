@@ -24,13 +24,13 @@ def exchange(in1, in2):
     input_array[in1] = input_array[in2]
     input_array[in2] = temp
 
-
-size = int(input("Inter the size of your list: "))
-input_array = []
-for i in range(0, size):
-    input_array.append(float(input(str(i + 1) + ". ")))
-print(input_array, end="")
-# call the first method to start the Process:
-quicksorting(0, size - 1)
-print(" ====> ", end="")
-print(input_array)
+if __name__ == "__main__":
+    size = int(input("Inter the size of your list: "))
+    input_array = []
+    for i in range(0, size):
+        input_array.append(float(input(str(i + 1) + ". ")))
+    print(input_array, end="")
+    # call the first method to start the Process:
+    quicksorting(0, size - 1)
+    print(" ====> ", end="")
+    print(input_array)
